@@ -1,0 +1,52 @@
+Section "ServerLayout"
+	Identifier     "Layout0"
+	Screen      0  "Screen0" 0 0
+	InputDevice    "Keyboard0" "CoreKeyboard"
+	InputDevice    "Mouse0" "CorePointer"
+EndSection
+
+Section "Files"
+        RgbPath      "/usr/X11R6/lib/X11/rgb"
+        ModulePath   "/usr/X11R6/lib/modules"
+        FontPath     "/usr/X11R6/lib/X11/fonts/misc/"
+        FontPath     "/usr/X11R6/lib/X11/fonts/Type1/"
+        FontPath     "/usr/X11R6/lib/X11/fonts/75dpi/"
+        FontPath     "/usr/X11R6/lib/X11/fonts/100dpi/"
+        FontPath     "/usr/X11R6/lib/X11/fonts/bitstream-vera/"
+EndSection
+
+Section "Module"
+	Load  "extmod"
+EndSection
+
+Section "InputDevice"
+	Identifier  "Mouse0"
+	Driver      "mouse"
+	Option	    "Protocol" "Auto"
+	Option	    "Device" "/dev/sysmouse"
+	Option      "ZAxisMapping" "4 5"
+EndSection
+
+Section "InputDevice"
+    Identifier  "Keyboard0"
+    Driver      "keyboard"
+    Option	    "XkbModel" "pc105"
+    Option      "XkbLayout" "us"
+EndSection
+
+Section "Monitor"
+	Identifier   "Monitor0"
+	HorizSync    31.5 - 48.5
+	VertRefresh  50.0 - 90.0
+EndSection
+
+Section "Screen"
+	Identifier "Screen0"
+	Device     "Card0"
+	Monitor    "Monitor0"
+	DefaultDepth     16
+	SubSection "Display"
+	       Depth 16
+        	Modes    "1024x768"
+	EndSubSection
+EndSection

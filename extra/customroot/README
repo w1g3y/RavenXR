@@ -1,0 +1,9 @@
+$FreeBSD$
+$Id: README,v 1.2 2005/10/01 23:26:16 saturnero Exp $
+
+This directory contains the custom files to be included into the live
+filesystem. It has to be considered as a / filesystem. Files are just
+copied to the livefs directory after every other operation, just
+before packing it into the final image. If a file is already present
+in the live fs it will be overrided.
+
