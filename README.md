@@ -6,7 +6,10 @@ It's a Live CD .ISO, and provides:
  - disk tools for cloning local devices, and across networks
  - Some data recovery tools
 
-
+At present, priorities are as follows:
+ - Get existing builds working on 14.2
+ - Begin updating build prosess to use ZFS pools and newer disk cloning to increase build speeds
+ - Incorporate new compressed filesystems for the .ISO
 
 
 ### Old FreeSBIE README:
