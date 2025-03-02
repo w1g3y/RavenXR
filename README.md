@@ -1,5 +1,15 @@
-# Usage
+# RavenXR
 
+RavenXR is a continuation of the FreeSBIE project.
+It's a Live CD .ISO, and provides:
+ - Lightweight GUI environment
+ - disk tools for cloning local devices, and across networks
+ - Some data recovery tools
+
+
+
+
+### Old FreeSBIE README:
 FreeSBIE 2 is quite easy and familiar for an average (Free)BSD user. It is Makefile-based, and it has a default configuration file overridable by the user. The quick way to make an ISO image consists of four steps:
 1. make sure you have mkisofs from the ‘cdrtools’ package (otherwise: pkg_add -rv cdrtools)
 2. run `make pkgselect’ to select which packages to include in your image (optional, if you don’t want packages or if package selection is done in freesbie.conf)
